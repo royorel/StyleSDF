@@ -1,0 +1,7 @@
+__pycache__/
+checkpoint/
+datasets/
+evaluations/
+full_models/
+pretrained_renderer/
+wandb/
