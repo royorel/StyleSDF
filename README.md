@@ -99,7 +99,7 @@ The script will generate an RGB image, a mesh generated from depth map, and the 
 To generate videos from a trained model, run: <br>
 `python render_video.py --expname NAME_OF_TRAINED_MODEL --size MODEL_OUTPUT_SIZE --identities NUMBER_OF_FACES`.
 
-This script will generate RGB video as well as depth map video for each identity. The average processing time per video is ~5 minutes on an RTX2080 Ti GPU.
+This script will generate RGB video as well as depth map video for each identity. The average processing time per video is ~5-10 minutes on an RTX2080 Ti GPU.
 
 ### Optional flags for video rendering
 ```
