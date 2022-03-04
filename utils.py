@@ -99,7 +99,7 @@ def generate_camera_params(resolution, device, batch=1, locations=None, sweep=Fa
         # sample camera locations on the unit sphere
         if uniform:
             azim = (-azim_range + 2 * azim_range * torch.rand(batch, 1, device=device))
-            elev = (elev_range * torch.rand(batch, 1, device=device))
+            elev = (-elev_range + 2 * torch.rand(batch, 1, device=device))
         else:
             azim = (azim_range * torch.randn(batch, 1, device=device))
             elev = (elev_range * torch.randn(batch, 1, device=device))
