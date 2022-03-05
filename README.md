@@ -1,7 +1,7 @@
 # StyleSDF: High-Resolution 3D-Consistent Image and Geometry Generation
 ### [Project Page](https://stylesdf.github.io/) | [Paper](https://arxiv.org/pdf/2112.11427.pdf)
 
-[![Explore in Colab](https://colab.research.google.com/assets/colab-badge.svg)]()<br>
+[![Explore in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/royorel/StyleSDF/blob/main/StyleSDF_demo.ipynb)<br>
 
 [Roy Or-El](https://homes.cs.washington.edu/~royorel/)<sup>1</sup> ,
 [Xuan Luo](https://roxanneluo.github.io/)<sup>1</sup>,
@@ -71,8 +71,7 @@ If any of these packages are not installed on your computer, you can install the
 
 ## Quick Demo
 You can explore our method in:
-1. Google Colab [![Explore in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/royorel/Lifespan_Age_Transformation_Synthesis/blob/master/LATS_demo.ipynb).
-2. Gradio
+1. Google Colab [![Explore in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/royorel/StyleSDF/blob/main/StyleSDF_demo.ipynb).
 
 Alternatively, you can download the pretrained models by running:<br>
 `python download_models.py`
