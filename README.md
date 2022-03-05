@@ -15,6 +15,9 @@
 <img src=./assets/teaser.png>
 </div>
 
+## Updates
+3/4/2022: Testing code and Colab demo were released. **Training files will be released soon.**
+
 ## Overview
 StyleSDF is a 3D-aware GAN, aimed at solving two main challenges:
 1. High-resolution, view-consistent generation of the RGB images.
