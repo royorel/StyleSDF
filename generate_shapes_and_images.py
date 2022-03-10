@@ -26,7 +26,8 @@ torch.random.manual_seed(1234)
 
 def generate(opt, g_ema, surface_g_ema, device, mean_latent, surface_mean_latent):
     g_ema.eval()
-    surface_g_ema.eval()
+    if not opt.no_surface_renderings:
+        surface_g_ema.eval()
 
     # set camera angles
     if opt.fixed_camera_angles:

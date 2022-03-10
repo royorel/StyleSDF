@@ -683,13 +683,14 @@ class Generator(nn.Module):
 
     def mean_latent(self, n_latent, device):
         latent_in = torch.randn(n_latent, self.style_dim, device=device)
-        renderer_latent = self.style(latent_in).mean(0, keepdim=True)
+        renderer_latent = self.style(latent_in)
+        renderer_latent_mean = renderer_latent.mean(0, keepdim=True)
         if self.full_pipeline:
-            decoder_latent = self.decoder.mean_latent(renderer_latent)
+            decoder_latent_mean = self.decoder.mean_latent(renderer_latent)
         else:
-            decoder_latent = None
+            decoder_latent_mean = None
 
-        return [renderer_latent, decoder_latent]
+        return [renderer_latent_mean, decoder_latent_mean]
 
     def get_latent(self, input):
         return self.style(input)
