@@ -15,6 +15,9 @@
 <img src=./assets/teaser.png>
 </div>
 
+## Updates
+3/4/2022: Testing code and Colab demo were released. **Training files will be released soon.**
+
 ## Overview
 StyleSDF is a 3D-aware GAN, aimed at solving two main challenges:
 1. High-resolution, view-consistent generation of the RGB images.
@@ -68,6 +71,9 @@ The following packages should also be installed:
 
 If any of these packages are not installed on your computer, you can install them using the supplied `requirements.txt` file:<br>
 ```pip install -r requirements.txt```
+
+## Download Pre-trained Models
+The pre-trained models can be downloaded by running `python download_models.py`.
 
 ## Quick Demo
 You can explore our method in:
