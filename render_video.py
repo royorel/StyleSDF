@@ -25,7 +25,8 @@ torch.random.manual_seed(1234)
 
 def render_video(opt, g_ema, surface_g_ema, device, mean_latent, surface_mean_latent):
     g_ema.eval()
-    surface_g_ema.eval()
+    if not opt.inference.no_surface_renderings or opt.model.project_noise:
+        surface_g_ema.eval()
 
     images = torch.Tensor(0, 3, opt.size, opt.size)
     num_frames = 250
