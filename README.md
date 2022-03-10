@@ -16,6 +16,7 @@
 </div>
 
 ## Updates
+3/9/2022: Fixed a bug in the calculation of the mean w vector (see commit [d4dd17d](https://github.com/royorel/StyleSDF/commit/d4dd17de09fd58adefc7ed49487476af6018894f)).<br>
 3/4/2022: Testing code and Colab demo were released. **Training files will be released soon.**
 
 ## Overview
