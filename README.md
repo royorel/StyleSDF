@@ -16,7 +16,7 @@
 </div>
 
 ## Updates
-3/27/2022: fixed a bug in the sphere initialization code (init_forward function was missing, see commit [0bd8741](https://github.com/royorel/StyleSDF/commit/0bd8741f26048d26160a495a9056b5f1da1a60a1)).<br>
+3/27/2022: Fixed a bug in the sphere initialization code (init_forward function was missing, see commit [0bd8741](https://github.com/royorel/StyleSDF/commit/0bd8741f26048d26160a495a9056b5f1da1a60a1)).<br>
 3/22/2022: **Added training files**.<br>
 3/9/2022: Fixed a bug in the calculation of the mean w vector (see commit [d4dd17d](https://github.com/royorel/StyleSDF/commit/d4dd17de09fd58adefc7ed49487476af6018894f)).<br>
 3/4/2022: Testing code and Colab demo were released. **Training files will be released soon.**
