@@ -181,16 +181,20 @@ Camera options:
 ## Citation
 If you use this code for your research, please cite our paper.
 ```
-@article{orel2021stylesdf,
+@InProceedings{orel2022stylesdf,
   title={Style{SDF}: {H}igh-{R}esolution {3D}-{C}onsistent {I}mage and {G}eometry {G}eneration},
-  author={Or-El, Roy and
-          Luo, Xuan and
-          Shan, Mengyi and
-          Shechtman, Eli and
-          Park, Jeong Joon and
-          Kemelmacher-Shlizerman, Ira},
-  journal={arXiv preprint arXiv:2112.11427},
-  year={2021}
+  author    = {Or-El, Roy and 
+               Luo, Xuan and 
+               Shan, Mengyi and 
+               Shechtman, Eli and 
+               Park, Jeong Joon and 
+               Kemelmacher-Shlizerman, Ira},
+  title     = {StyleSDF: High-Resolution 3D-Consistent Image and Geometry Generation},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  month     = {June},
+  year      = {2022},
+  pages     = {13503-13513}
+}
 }
 ```
 
