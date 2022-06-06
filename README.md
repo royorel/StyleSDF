@@ -195,7 +195,6 @@ If you use this code for your research, please cite our paper.
   year      = {2022},
   pages     = {13503-13513}
 }
-}
 ```
 
 ## Acknowledgments
