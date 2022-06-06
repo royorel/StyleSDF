@@ -189,7 +189,6 @@ If you use this code for your research, please cite our paper.
                Shechtman, Eli and 
                Park, Jeong Joon and 
                Kemelmacher-Shlizerman, Ira},
-  title     = {StyleSDF: High-Resolution 3D-Consistent Image and Geometry Generation},
   booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
   month     = {June},
   year      = {2022},
