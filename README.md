@@ -1,6 +1,10 @@
 # StyleSDF: High-Resolution 3D-Consistent Image and Geometry Generation
 ### [Project Page](https://stylesdf.github.io/) | [Paper](https://arxiv.org/pdf/2112.11427.pdf)
 
+[Demo and Docker image on Replicate](https://replicate.com/royorel/StyleSDF)
+<a href="https://replicate.com/royorel/StyleSDF"><img src="https://replicate.com/royorel/StyleSDF/badge"></a>
+
+
 [![Explore in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/royorel/StyleSDF/blob/main/StyleSDF_demo.ipynb)<br>
 
 [Roy Or-El](https://homes.cs.washington.edu/~royorel/)<sup>1</sup> ,
@@ -16,6 +20,8 @@
 </div>
 
 ## Updates
+3/27/2022: Fixed a bug in the sphere initialization code (init_forward function was missing, see commit [0bd8741](https://github.com/royorel/StyleSDF/commit/0bd8741f26048d26160a495a9056b5f1da1a60a1)).<br>
+3/22/2022: **Added training files**.<br>
 3/9/2022: Fixed a bug in the calculation of the mean w vector (see commit [d4dd17d](https://github.com/royorel/StyleSDF/commit/d4dd17de09fd58adefc7ed49487476af6018894f)).<br>
 3/4/2022: Testing code and Colab demo were released. **Training files will be released soon.**
 
@@ -179,16 +185,18 @@ Camera options:
 ## Citation
 If you use this code for your research, please cite our paper.
 ```
-@article{orel2021stylesdf,
+@InProceedings{orel2022stylesdf,
   title={Style{SDF}: {H}igh-{R}esolution {3D}-{C}onsistent {I}mage and {G}eometry {G}eneration},
-  author={Or-El, Roy and
-          Luo, Xuan and
-          Shan, Mengyi and
-          Shechtman, Eli and
-          Park, Jeong Joon and
-          Kemelmacher-Shlizerman, Ira},
-  journal={arXiv preprint arXiv:2112.11427},
-  year={2021}
+  author    = {Or-El, Roy and 
+               Luo, Xuan and 
+               Shan, Mengyi and 
+               Shechtman, Eli and 
+               Park, Jeong Joon and 
+               Kemelmacher-Shlizerman, Ira},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  month     = {June},
+  year      = {2022},
+  pages     = {13503-13513}
 }
 ```
 

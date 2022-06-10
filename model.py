@@ -712,6 +712,13 @@ class Generator(nn.Module):
 
         return styles
 
+    def init_forward(self, styles, cam_poses, focals, near=0.88, far=1.12):
+        latent = self.styles_and_noise_forward(styles)
+
+        sdf, target_values = self.renderer.mlp_init_pass(cam_poses, focals, near, far, styles=latent[0])
+
+        return sdf, target_values
+
     def forward(self, styles, cam_poses, focals, near=0.88, far=1.12, return_latents=False,
                 inject_index=None, truncation=1, truncation_latent=None,
                 input_is_latent=False, noise=None, randomize_noise=True,
