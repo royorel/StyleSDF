@@ -139,7 +139,7 @@ Ideally, `CHUNK_SIZE` should be the same as `BATCH_SIZE`, but on most GPUs it wi
 If you have multiple GPUs you can train your model on multiple instances by running:<br>
 `python -m torch.distributed.launch --nproc_per_node NUM_GPUS train_volume_renderer.py --batch BATCH_SIZE --chunk CHUNK_SIZE --expname EXPERIMENT_NAME --dataset_path DATASET_PATH`
 
-### Training the full_pipeline
+### Training the full pipeline
 #### Training scripts
 To train the volume renderer on FFHQ run: `bash ./scripts/train_ffhq_full_pipeline_1024x1024.sh`. <br>
 To train the volume renderer on AFHQ run: `bash ./scripts/train_afhq_full_pipeline_512x512.sh`.
