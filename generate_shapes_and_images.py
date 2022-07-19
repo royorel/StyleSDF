@@ -176,7 +176,7 @@ if __name__ == "__main__":
         # define results directory name
         result_model_dir = 'final_model'
     else:
-        checkpoints_dir = os.path.join('checkpoint', opt.experiment.expname)
+        checkpoints_dir = os.path.join('checkpoint', opt.experiment.expname, 'full_pipeline')
         checkpoint_path = os.path.join(checkpoints_dir,
                                        'models_{}.pt'.format(opt.experiment.ckpt.zfill(7)))
         # define results directory name
