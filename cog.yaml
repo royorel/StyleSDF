@@ -1,0 +1,39 @@
+# Configuration for Cog ⚙️
+# Reference: https://github.com/replicate/cog/blob/main/docs/yaml.md
+
+build:
+  # set to true if your model requires a GPU
+  gpu: true
+  cuda: "11.0"
+  
+  # python version in the form '3.8' or '3.8.12'
+  python_version: "3.8"
+
+  # a list of packages in the format <package-name>==<version>
+  python_packages:
+    - "ipython==7.33.0"
+    - "torch==1.7.0"
+    - "torchvision==0.8.1"
+    - "lmdb==0.99"
+    - "numpy==1.21.6"
+    - "ninja==1.10.2.3"
+    - "requests==2.23.0"
+    - "tqdm==4.64.0"
+    - "scikit-image==0.18.3"
+    - "scikit-video==1.1.11"
+    - "trimesh[easy]==3.12.5"
+    - "configargparse==1.5.3"
+    - "munch==2.5.0"
+    - "wandb==0.12.17"
+
+  # commands run after the environment is setup
+  run:
+
+    - "pip install scipy pillow"
+    - "apt-get update && apt-get install -y cmake ffmpeg libsm6 libxext6"
+    - "pip install opencv-python"
+    - "pip install fvcore"
+    - "git clone https://github.com/facebookresearch/pytorch3d.git && cd pytorch3d && TORCH_CUDA_ARCH_LIST='7.5' FORCE_CUDA=1 python setup.py build install"
+  
+# predict.py defines how predictions are run on your model
+predict: "predict.py:Predictor"
