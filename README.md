@@ -115,7 +115,7 @@ This script will generate RGB video as well as depth map video for each identity
   --project_noise              When true, use geometry-aware noise projection to reduce flickering effects (see supplementary section C.1 in the paper). Warning: processing time significantly increases with this flag to ~20 minutes per video. (default: false)
 ```
 
-## Training (training files will be released soon...)
+## Training
 ### Preparing your Dataset
 If you wish to train a model from scratch, first you need to convert your dataset to an lmdb format. Run:<br>
 `python prepare_data.py --out_path OUTPUT_LMDB_PATH --n_worker N_WORKER --size SIZE1,SIZE2,SIZE3,... INPUT_DATASET_PATH`
