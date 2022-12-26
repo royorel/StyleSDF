@@ -1,5 +1,5 @@
 # StyleSDF: High-Resolution 3D-Consistent Image and Geometry Generation
-### [Project Page](https://stylesdf.github.io/) | [Paper](https://arxiv.org/pdf/2112.11427.pdf)
+### [Project Page](https://stylesdf.github.io/) | [Paper](https://arxiv.org/pdf/2112.11427.pdf) | [HuggingFace Demo](https://huggingface.co/spaces/SerdarHelli/StyleSDF-3D)
 
 [![Explore in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/royorel/StyleSDF/blob/main/StyleSDF_demo.ipynb)<br>
 
@@ -16,6 +16,7 @@
 </div>
 
 ## Updates
+12/26/2022: A new HuggingFace demo is now available. Special thanks to [@SerdarHelli](https://github.com/SerdarHelli) for the implementation.<br>
 3/27/2022: Fixed a bug in the sphere initialization code (init_forward function was missing, see commit [0bd8741](https://github.com/royorel/StyleSDF/commit/0bd8741f26048d26160a495a9056b5f1da1a60a1)).<br>
 3/22/2022: **Added training files**.<br>
 3/9/2022: Fixed a bug in the calculation of the mean w vector (see commit [d4dd17d](https://github.com/royorel/StyleSDF/commit/d4dd17de09fd58adefc7ed49487476af6018894f)).<br>
@@ -198,3 +199,5 @@ If you use this code for your research, please cite our paper.
 
 ## Acknowledgments
 This code is inspired by rosinality's [StyleGAN2-PyTorch](https://github.com/rosinality/stylegan2-pytorch) and Yen-Chen Lin's [NeRF-pytorch](https://github.com/yenchenlin/nerf-pytorch).
+
+A special thanks to [@SerdarHelli](https://github.com/SerdarHelli) for implementing the HuggingFace demo.
