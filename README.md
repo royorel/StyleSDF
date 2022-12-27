@@ -1,6 +1,10 @@
 # StyleSDF: High-Resolution 3D-Consistent Image and Geometry Generation
 ### [Project Page](https://stylesdf.github.io/) | [Paper](https://arxiv.org/pdf/2112.11427.pdf) | [HuggingFace Demo](https://huggingface.co/spaces/SerdarHelli/StyleSDF-3D)
 
+[Demo and Docker image on Replicate](https://replicate.com/royorel/StyleSDF)
+<a href="https://replicate.com/royorel/StyleSDF"><img src="https://replicate.com/royorel/StyleSDF/badge"></a>
+
+
 [![Explore in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/royorel/StyleSDF/blob/main/StyleSDF_demo.ipynb)<br>
 
 [Roy Or-El](https://homes.cs.washington.edu/~royorel/)<sup>1</sup> ,
